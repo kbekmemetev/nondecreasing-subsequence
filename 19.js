@@ -25,6 +25,7 @@ const findLongestNonDecreasingSubsequence = arr => {
     const originalArrayLength = arr.length
     let dynamic = Array(originalArrayLength + 1)
     let LNDSlength = 0
+    dynamic[0] = -Infinity
 
     for (let i = 1; i < originalArrayLength + 1; i++){
         dynamic[i] = Infinity
